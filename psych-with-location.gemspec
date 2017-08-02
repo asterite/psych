@@ -2,16 +2,18 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |s|
-  s.name = "psych"
+  s.name = "psych-with-location"
   s.version = "3.0.0.beta3"
-  s.authors = ["Aaron Patterson", "SHIBATA Hiroshi", "Charles Oliver Nutter"]
-  s.email = ["aaron@tenderlovemaking.com", "hsbt@ruby-lang.org", "headius@headius.com"]
-  s.date = "2017-06-16"
+  s.authors = ["Aaron Patterson", "SHIBATA Hiroshi", "Charles Oliver Nutter", "Ary Borenszweig"]
+  s.email = ["aaron@tenderlovemaking.com", "hsbt@ruby-lang.org", "headius@headius.com", "asterite@gmail.com"]
+  s.date = "2017-08-02"
   s.summary = "Psych is a YAML parser and emitter"
   s.description = <<-DESCRIPTION
 Psych is a YAML parser and emitter. Psych leverages libyaml[http://pyyaml.org/wiki/LibYAML]
 for its YAML parsing and emitting capabilities. In addition to wrapping libyaml,
 Psych also knows how to serialize and de-serialize most Ruby objects to and from the YAML format.
+
+This fork provides precise location information to Psych::Handler and Psych::Nodes::Node.
 DESCRIPTION
   s.homepage = "https://github.com/ruby/psych"
   s.licenses = ["MIT"]
@@ -35,7 +37,7 @@ DESCRIPTION
     "lib/psych/set.rb", "lib/psych/stream.rb", "lib/psych/streaming.rb", "lib/psych/syntax_error.rb",
     "lib/psych/tree_builder.rb", "lib/psych/versions.rb", "lib/psych/visitors.rb","lib/psych/visitors/depth_first.rb",
     "lib/psych/visitors/emitter.rb", "lib/psych/visitors/json_tree.rb", "lib/psych/visitors/to_ruby.rb",
-    "lib/psych/visitors/visitor.rb", "lib/psych/visitors/yaml_tree.rb", "lib/psych/y.rb", "psych.gemspec"
+    "lib/psych/visitors/visitor.rb", "lib/psych/visitors/yaml_tree.rb", "lib/psych/y.rb", "psych-with-location.gemspec"
   ]
 
   s.rdoc_options = ["--main", "README.md"]
